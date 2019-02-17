@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scribe.Connector.Common.Reflection", "Scribe.Connector.Common.Reflection\Scribe.Connector.Common.Reflection.csproj", "{3BDDA1F8-C4F8-40D5-912E-E81B6E2A4BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scribe.Connection.Common.Reflection.Test", "Scribe.Connection.Common.Reflection.Test\Scribe.Connection.Common.Reflection.Test.csproj", "{11B208B3-6F77-4E47-B155-9CAB1CB06F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorConsole", "Scribe.Connector.Common.Reflection\GeneratorConsole\GeneratorConsole.csproj", "{611651BF-9F12-4A94-B54F-3D55F49696B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataComparer", "Scribe.Connector.Common.Reflection\MetadataComparer\MetadataComparer.csproj", "{10BE3ECF-B031-406B-AC18-789AEE60B75B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionTestModels", "ReflectionTestModels\ReflectionTestModels.csproj", "{9F4EEA56-D47D-41A3-B6E5-561CEA755424}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BDDA1F8-C4F8-40D5-912E-E81B6E2A4BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDDA1F8-C4F8-40D5-912E-E81B6E2A4BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDDA1F8-C4F8-40D5-912E-E81B6E2A4BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDDA1F8-C4F8-40D5-912E-E81B6E2A4BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B208B3-6F77-4E47-B155-9CAB1CB06F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B208B3-6F77-4E47-B155-9CAB1CB06F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B208B3-6F77-4E47-B155-9CAB1CB06F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B208B3-6F77-4E47-B155-9CAB1CB06F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611651BF-9F12-4A94-B54F-3D55F49696B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611651BF-9F12-4A94-B54F-3D55F49696B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611651BF-9F12-4A94-B54F-3D55F49696B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611651BF-9F12-4A94-B54F-3D55F49696B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BE3ECF-B031-406B-AC18-789AEE60B75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BE3ECF-B031-406B-AC18-789AEE60B75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BE3ECF-B031-406B-AC18-789AEE60B75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BE3ECF-B031-406B-AC18-789AEE60B75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F4EEA56-D47D-41A3-B6E5-561CEA755424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4EEA56-D47D-41A3-B6E5-561CEA755424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4EEA56-D47D-41A3-B6E5-561CEA755424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4EEA56-D47D-41A3-B6E5-561CEA755424}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42D720CE-6734-4446-9272-D5043F3F429B}
+	EndGlobalSection
+EndGlobal

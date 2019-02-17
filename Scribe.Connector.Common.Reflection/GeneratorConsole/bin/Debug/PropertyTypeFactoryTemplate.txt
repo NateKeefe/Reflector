@@ -1,0 +1,13 @@
+﻿            // {DotNetType}
+			if (ty == typeof({DotNetType})) return new {DotNetType}Property(propAttr, name, ty, getter, setter);
+            if (ty == typeof({DotNetType}?)) return new N{DotNetType}Property(propAttr, name, ty, getter, setter);
+
+            if (ty == typeof(List<{DotNetType}>)) return new {DotNetType}ListProperty(propAttr, name, ty, getter, setter);
+            if (ty == typeof(IEnumerable<{DotNetType}>)) return new {DotNetType}ListProperty(propAttr, name, ty, getter, setter);
+            if (ty == typeof({DotNetType}[])) return new {DotNetType}ListProperty(propAttr, name, ty, getter, setter);
+
+
+            if (ty == typeof(List<{DotNetType}?>)) return new N{DotNetType}ListProperty(propAttr, name, ty, getter, setter);
+            if (ty == typeof(IEnumerable<{DotNetType}?>)) return new N{DotNetType}ListProperty(propAttr, name, ty, getter, setter);
+            if (ty == typeof({DotNetType}?[])) return new N{DotNetType}ListProperty(propAttr, name, ty, getter, setter);
+

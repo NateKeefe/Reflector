@@ -1,0 +1,9 @@
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\bin\Debug\PropertyTypeFactoryTemplate.txt
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\bin\Debug\sproptemplate.txt
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\bin\Debug\GeneratorConsole.exe.config
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\bin\Debug\GeneratorConsole.exe
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\bin\Debug\GeneratorConsole.pdb
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\obj\Debug\GeneratorConsole.exe
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\obj\Debug\GeneratorConsole.pdb
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\obj\Debug\GeneratorConsole.csprojAssemblyReference.cache
+C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\GeneratorConsole\obj\Debug\GeneratorConsole.csproj.CoreCompileInputs.cache

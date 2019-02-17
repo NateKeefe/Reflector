@@ -1,0 +1,50 @@
+    internal sealed class N{DotNetName}ListProperty : SimpleNullableListProperty<{DotNetName}>
+    {
+        public N{DotNetName}ListProperty(ISettablePropertyDef pDef, string propName, Type propType, Func<object, object> getter, Action<object, object> setter)
+            : base(pDef, propName, propType, getter, setter)
+        {
+        }
+
+        protected override {DotNetName}? ConvertItem(object obj)
+        {
+            return SimpleTypeConverters.ConvertTo{DotNetName}(obj);
+        }
+    }
+
+    internal sealed class {DotNetName}ListProperty : SimpleListProperty<{DotNetName}>
+    {
+        public {DotNetName}ListProperty(ISettablePropertyDef pDef, string propName, Type propType, Func<object, object> getter, Action<object, object> setter)
+            : base(pDef, propName, propType, getter, setter)
+        {
+        }
+
+        protected override {DotNetName} ConvertItem(object obj)
+        {
+            if (obj is {DotNetName} x) return x; 
+            return SimpleTypeConverters.ConvertTo{DotNetName}(obj);
+        }
+    }
+
+    internal sealed class {DotNetName}Property : SimpleProperty<{DotNetName}>
+    {
+        public {DotNetName}Property(ISettablePropertyDef pDef, string propName, Type propType, Func<object, object> getter, Action<object, object> setter) : base(pDef, propName, propType, getter, setter) { }
+
+        protected override {DotNetName} Convert(object obj)
+        {
+            if (obj is {DotNetName} x) return x; 
+            return SimpleTypeConverters.ConvertTo{DotNetName}(obj);
+        }
+    }
+
+    internal sealed class N{DotNetName}Property : SimpleNullableProperty<{DotNetName}>
+    {
+        public N{DotNetName}Property(ISettablePropertyDef pDef, string propName, Type propType, Func<object, object> getter, Action<object, object> setter) : base(pDef, propName, propType, getter, setter) { }
+
+        protected override {DotNetName}? Convert(object obj)
+        {
+            if (obj == null) return null;
+            if (obj is {DotNetName} x) return x; 
+            return SimpleTypeConverters.ConvertTo{DotNetName}(obj);
+        }
+    }
+

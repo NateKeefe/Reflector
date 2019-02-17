@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BDDA1F8-C4F8-40D5-912E-E81B6E2A4BBA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scribe.Connector.Common.Reflection</RootNamespace>
+    <AssemblyName>Scribe.Connector.Common.Reflection</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Scribe.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Scribe.Core.ConnectorApi">
+      <HintPath>..\..\..\..\ConnectorDependencies\Scribe.Core.ConnectorApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ActionDef.cs" />
+    <Compile Include="AttributeBasedReflectionSpecification.cs" />
+    <Compile Include="Actions\CreateAttribute.cs" />
+    <Compile Include="Actions\CreateWithAttribute.cs" />
+    <Compile Include="InvalidStringValueForEnumException.cs" />
+    <Compile Include="PropertyType\EnumConverters.cs" />
+    <Compile Include="PropertyType\EnumProperty.cs" />
+    <Compile Include="PropertyType\IFullProp.cs" />
+    <Compile Include="ObjDefStub.cs" />
+    <Compile Include="PropDefBase.cs" />
+    <Compile Include="PropertyType\DataEntityProperty.cs" />
+    <Compile Include="Data\DataReflector.cs" />
+    <Compile Include="Actions\DeleteAttribute.cs" />
+    <Compile Include="PropertyType\DataEntityPropertyDef.cs" />
+    <Compile Include="PropertyType\IDataEntityProperty.cs" />
+    <Compile Include="PropertyType\IGetProp.cs" />
+    <Compile Include="IMetadata.cs" />
+    <Compile Include="PropertyType\IProp.cs" />
+    <Compile Include="PropertyType\IPropDef.cs" />
+    <Compile Include="ISettablePropertyDef.cs" />
+    <Compile Include="Metadata.cs" />
+    <Compile Include="MetadataWrapper.cs" />
+    <Compile Include="Actions\NativeQueryAction.cs" />
+    <Compile Include="Actions\NativeQueryAttribute.cs" />
+    <Compile Include="PropertyType\IListOfObjDefProp.cs" />
+    <Compile Include="PropertyType\IObjDef.cs" />
+    <Compile Include="PropertyType\IObjDefHeader.cs" />
+    <Compile Include="PropertyType\IObjDefProp.cs" />
+    <Compile Include="PropertyType\ListOfDataEntity.cs" />
+    <Compile Include="PropertyType\ObjDefConverter.cs" />
+    <Compile Include="PropertyType\ObjDefHeader.cs" />
+    <Compile Include="PropertyType\SimpleNullableListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\BooleanListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\BooleanProperty.cs" />
+    <Compile Include="PropertyType\Specialized\ByteListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\ByteProperty.cs" />
+    <Compile Include="PropertyType\Specialized\CharListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\CharProperty.cs" />
+    <Compile Include="PropertyType\Specialized\DateTimeListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\DateTimeProperty.cs" />
+    <Compile Include="PropertyType\Specialized\DecimalListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\DecimalProperty.cs" />
+    <Compile Include="PropertyType\Specialized\DoubleListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\DoubleProperty.cs" />
+    <Compile Include="PropertyType\Specialized\GuidListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\GuidProperty.cs" />
+    <Compile Include="PropertyType\Specialized\Int16ListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\Int16Property.cs" />
+    <Compile Include="PropertyType\Specialized\Int32ListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\Int32Property.cs" />
+    <Compile Include="PropertyType\Specialized\Int64ListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\Int64Property.cs" />
+    <Compile Include="PropertyType\Specialized\NBooleanProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NByteListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NByteProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NCharListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NCharProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NDateTimeListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NDateTimeProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NDecimalListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NDecimalProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NDoubleListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NDoubleProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NGuidListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NGuidProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NInt16ListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NInt16Property.cs" />
+    <Compile Include="PropertyType\Specialized\NInt32ListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NInt32Property.cs" />
+    <Compile Include="PropertyType\Specialized\NInt64ListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NInt64Property.cs" />
+    <Compile Include="PropertyType\Specialized\NSingleListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\NSingleProperty.cs" />
+    <Compile Include="PropertyType\Specialized\SingleListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\SingleProperty.cs" />
+    <Compile Include="PropertyType\Specialized\StringListProperty.cs" />
+    <Compile Include="PropertyType\Specialized\StringProperty.cs" />
+    <Compile Include="PropertyType\SimplePropDefBase.cs" />
+    <Compile Include="PropertyDef.cs" />
+    <Compile Include="Actions\CreateAction.cs" />
+    <Compile Include="Actions\CreateWithAction.cs" />
+    <Compile Include="Actions\DeleteAction.cs" />
+    <Compile Include="IReflectionSpecification.cs" />
+    <Compile Include="MetadataReflector.cs" />
+    <Compile Include="ObjDef.cs" />
+    <Compile Include="ObjectDefinitionAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyDefinitionAttribute.cs" />
+    <Compile Include="PropertyTypeExt.cs" />
+    <Compile Include="PropertyType\SimpleTypeConverters.cs" />
+    <Compile Include="PropertyType\Specialized\NBooleanListProperty.cs" />
+    <Compile Include="Actions\QueryAction.cs" />
+    <Compile Include="ReflectionExtensions.cs" />
+    <Compile Include="Actions\QueryAttribute.cs" />
+    <Compile Include="PropertyType\SimpleListProperty.cs" />
+    <Compile Include="PropertyType\SimpleNullableProperty.cs" />
+    <Compile Include="PropertyType\SimpleProperty.cs" />
+    <Compile Include="SimpleTypes.cs" />
+    <Compile Include="SupportedOperationAttribute.cs" />
+    <Compile Include="ThrowHelper.cs" />
+    <Compile Include="Actions\UpdateAction.cs" />
+    <Compile Include="Actions\UpdateAttribute.cs" />
+    <Compile Include="Actions\UpdateWithAction.cs" />
+    <Compile Include="Actions\UpdateWithAttribute.cs" />
+    <Compile Include="Actions\UpsertAction.cs" />
+    <Compile Include="Actions\UpsertAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Scribe.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
