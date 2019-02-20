@@ -37,8 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Scribe.Core.ConnectorApi">
-      <HintPath>..\..\..\..\ConnectorDependencies\Scribe.Core.ConnectorApi.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\Scribe.Core.ConnectorApi.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

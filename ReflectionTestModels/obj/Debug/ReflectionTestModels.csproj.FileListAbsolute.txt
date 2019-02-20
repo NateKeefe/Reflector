@@ -10,3 +10,16 @@ C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Reflect
 C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\ReflectionTestModels\obj\Debug\ReflectionTestModels.csproj.CopyComplete
 C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\ReflectionTestModels\obj\Debug\ReflectionTestModels.dll
 C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\ReflectionTestModels\obj\Debug\ReflectionTestModels.pdb
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\bin\Debug\ReflectionTestModels.dll.config
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\bin\Debug\ReflectionTestModels.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\bin\Debug\ReflectionTestModels.pdb
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\bin\Debug\Scribe.Connector.Common.Reflection.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\bin\Debug\Scribe.Core.ConnectorApi.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\bin\Debug\System.ValueTuple.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\bin\Debug\Scribe.Connector.Common.Reflection.pdb
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\bin\Debug\System.ValueTuple.xml
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\obj\Debug\ReflectionTestModels.csprojAssemblyReference.cache
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\obj\Debug\ReflectionTestModels.csproj.CoreCompileInputs.cache
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\obj\Debug\ReflectionTestModels.csproj.CopyComplete
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\obj\Debug\ReflectionTestModels.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\ReflectionTestModels\obj\Debug\ReflectionTestModels.pdb

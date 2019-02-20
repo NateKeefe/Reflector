@@ -7,3 +7,13 @@ C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.
 C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\obj\Debug\Scribe.Connector.Common.Reflection.csprojAssemblyReference.cache
 C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\obj\Debug\Scribe.Connector.Common.Reflection.csproj.CoreCompileInputs.cache
 C:\Users\nkeefe\Documents\G2\Adapters\Scribe.Connector.Common\Trunk\Code\Scribe.Connector.Common.Reflection\obj\Debug\Scribe.Connector.Common.Reflection.csproj.CopyComplete
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\bin\Debug\Scribe.Connector.Common.Reflection.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\bin\Debug\Scribe.Connector.Common.Reflection.pdb
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\bin\Debug\Scribe.Core.ConnectorApi.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\bin\Debug\System.ValueTuple.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\bin\Debug\System.ValueTuple.xml
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\obj\Debug\Scribe.Connector.Common.Reflection.csprojAssemblyReference.cache
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\obj\Debug\Scribe.Connector.Common.Reflection.csproj.CoreCompileInputs.cache
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\obj\Debug\Scribe.Connector.Common.Reflection.csproj.CopyComplete
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\obj\Debug\Scribe.Connector.Common.Reflection.dll
+C:\Users\nkeefe\Documents\GitHub\Reflector\Scribe.Connector.Common.Reflection\obj\Debug\Scribe.Connector.Common.Reflection.pdb
