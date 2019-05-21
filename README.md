@@ -3,6 +3,9 @@
 
 This works well when paired with [Json.NET/Newtonsoft](https://github.com/JamesNK/Newtonsoft.Json), [XmlSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer), [EDI.NET](https://github.com/indice-co/EDI.Net), or any other serializer. 
 
+## Quick Start
+Build this project and import its DLL it to your Scribe SDK/CDK project.
+
 ## Attributing Metadata:
 
 ```csharp
