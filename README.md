@@ -1,58 +1,54 @@
-# Reflector
-### Allows for attributing .NET classes and Properties to create Scribe metadata. 
+# Scribe Labs - Reflector
+.NET Framework project to be referenced in Scribe Connectors, focusing on a framework for attributing .NET classes to easily generate Scribe metadata, with methods for interchanging data between these .NET classes and Scribe DataEntities/OperationInput (including hierarchal Scribe models).
 
-Attributing Metadata example:
+This works well when paired with [Json.NET/Newtonsoft](https://github.com/JamesNK/Newtonsoft.Json), [XmlSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer), [EDI.NET](https://github.com/indice-co/EDI.Net), or any other serializer. 
 
-```dotnet
+## Attributing Metadata:
+
+```csharp
 using Newtonsoft.Json;
 using Scribe.Connector.Common.Reflection;
 using Scribe.Connector.Common.Reflection.Actions;
 
 namespace CDK.Entities.Person
 {
-    [Query]
-    [CreateWith]
-    [ObjectDefinition(Name = "Person")]
-    public class Rootobject
+    [Query] //Action Metadata
+    [CreateWith] //Action Metadata
+    [ObjectDefinition(Name = "Person")] //Object metadata
+    public class Rootobject //.NET Class
     {
-        [PropertyDefinition]
-        public string firstname { get; set; }
-        [PropertyDefinition]
+        [PropertyDefinition] //Property metadata
+        public string firstname { get; set; } //.NET property
+        
+        [PropertyDefinition] //Property metadata for referenced object
         public Folder folder { get; set; }
-        [PropertyDefinition]
-        public Link[] links { get; set; }
-        [PropertyDefinition]
-        public string email { get; set; }
-        [PropertyDefinition]
-        public string lastname { get; set; }
-
-        //Filters
-        [PropertyDefinition(UsedInQueryConstraint = true, UsedInQuerySelect = false, UsedInActionInput = false, UsedInActionOutput = false)]
-        [JsonIgnore]
+        
+        //Filters metadata
+        [PropertyDefinition(UsedInQueryConstraint = true, UsedInQuerySelect = false, UsedInActionInput = false, UsedInActionOutput = false)] //Additional Property Metadata
+        [JsonIgnore] //Newtonsoft attribute
         public string peopleId { get; set; }
-        //Results
+        
+        //Results metadata
         [PropertyDefinition(RequiredInActionInput = false, UsedInActionInput = false, UsedInQueryConstraint = false)]
         [JsonIgnore]
         public string location { get; set; }
     }
     
-    [ObjectDefinition]
+    [ObjectDefinition] //Hierarchal object Definition for  
     public class Folder
     {
         [PropertyDefinition]
         public string id { get; set; }
         [PropertyDefinition]
-        public string formattedvalue { get; set; }
-        [PropertyDefinition]
         public string value { get; set; }
     }
 }
 ````
-### Also translates between OperationInput and DataEntities, and DataEntities to ExecuteQuery.
+## Translations between OperationInput and DataEntities, and DataEntities to ExecuteQuery.
 
-For converting a Query example:
+### For converting a Query example:
 
-````dotnet
+````csharp
   public static IEnumerable<DataEntity> QueryApi()
   {
     var stringResponse = httpClientMethod.MakeHttpRequest();
@@ -61,8 +57,8 @@ For converting a Query example:
   }
 ````
 
-For converting an Operation example:
-````dotnet
+### For converting an Operation example:
+````csharp
   public OperationResult Create(DataEntity dataEntity)
   {
     var person = ToScribeModel<Entities.Person.Rootobject>(dataEntity);
